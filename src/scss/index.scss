@@ -1,3 +1,7 @@
+body {
+ font-family: "Questrial";
+}
+
 header {
   img {
     margin-top: 3%;
@@ -48,6 +52,7 @@ header {
       right: 150px;
       top: 25px;
       position: absolute;
+      display: none;
     
       & a {
         color: #fff;
@@ -62,4 +67,24 @@ header {
   }
 }
 
+.hero {
+  display: flex;
+  justify-content: center;
+  margin: 2% 8%;
+
+  & .fleur {
+    position: absolute;
+    height: 85vh;
+  }
+
+  & .portrait {
+    padding-top: 20%;
+
+    & h1 {
+      text-align: center;
+      font-size: 72px;
+      color: #858b82;
+    }
+  }
+}
 
