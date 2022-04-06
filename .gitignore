@@ -9,6 +9,7 @@
 ###################
 node_modules/
 dist/
+.parcel-cache/
 
 # OS generated files #
 ######################
