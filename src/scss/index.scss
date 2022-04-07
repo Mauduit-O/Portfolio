@@ -190,7 +190,7 @@ header {
 }
 
 .container-section3 {
-  background: white;
+  background: #f7f7f2;
   padding-left: 0;
 
   & .content__section3 {
@@ -229,13 +229,24 @@ header {
 }
 
 
-// .container-section3  {
-//   padding-top: 3%;
-//   width: 100vw;
-//   height: 100vh;
-//   background: #b3d5de;
-// }
+.container-section4  {
+  background: #6b6767;
 
+  h1, p {
+    color: #f7f7f1;
+  }
+
+  .btn-contact {
+    background-color: #f7f7f1;
+    border: none;
+  }
+
+
+}
+
+.line-contact {
+  background-color: #f7f7f1;
+}
 
 .section2 {
   opacity: 0;
