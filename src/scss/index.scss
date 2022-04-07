@@ -11,78 +11,6 @@ h1 {
   font-family: 'Questrial';
 }
 
-header {
-  background-color: white;
-  height: 9vh;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  z-index: 3;
-
-  img {
-    margin-top: 3%;
-    margin-left: 3%;
-  }
-
-  nav {
-    .container-btn-menu {
-      width: 35px;
-      position: fixed;
-      top: 3%;
-      right: 3%;
-      cursor: pointer;
-    }
-
-    .content-btn-menu {
-      height: 3px;
-      background-color: black;
-      width: 100%;
-      position: absolute;
-      top: 20px;
-      left: 0;
-
-      &::before, &::after {
-        content: "";
-        height: 3px;
-        background-color: black;
-        width: 100%;
-        position: absolute;
-        top: -10px;
-        left: 0;
-        transition-duration: 1s, 1s;
-      }
-
-      &::after {
-        top: 10px;
-      }
-    }
-
-    .menu {
-      background-color: #3D3D3D;
-      border-radius: 6px;
-      width: 40vw;
-      height: 35vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      right: 150px;
-      top: 25px;
-      position: absolute;
-      display: none;
-    
-      & a {
-        color: #fff;
-        font-size: 26px;
-        margin: 5% 0;
-
-          &:hover {
-            color: rgb(191, 235, 191);
-          }
-      }
-    }
-  }
-}
-
 .container-section1  {
   width: 100vw;
   height: 100vh;
@@ -114,7 +42,7 @@ header {
   padding-top: 3%;
   width: 100vw;
   height: 98vh;
-  background: #e6eae2;
+  background: #efede5;
   padding-left: 16%;
 
   & .content  {

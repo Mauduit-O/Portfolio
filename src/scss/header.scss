@@ -1,0 +1,91 @@
+header {
+  background-color: white;
+  height: 9vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+
+  img {
+    margin-top: 3%;
+    margin-left: 3%;
+  }
+
+  .toogle-btn {
+    width: 35px;
+    height: 40px;
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    cursor: pointer;
+  }
+
+  .toogle-btn span {
+    height: 3px;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+
+      &::before, &::after {
+        content: "";
+        height: 3px;
+        background-color: black;
+        width: 100%;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        transition-duration: 1s, 1s;
+      }
+
+    &::after {
+      top: 10px;
+    }
+  }
+  
+  nav.is-open + .open-menu span {
+    background-color: transparent;
+  }
+  
+  nav.is-open + .open-menu span::before {
+    transform: rotate(45deg) translate(20px, 6px);
+    background-color: #fff;
+  }
+  
+  nav.is-open + .open-menu span::after {
+    transform: rotate(-45deg) translate(8px, 6px);
+    background-color: #fff;
+  }
+
+  nav.is-open {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .container-menu {
+    width: 100vw;
+    background-color: #3d3d3d;
+    border-radius: 6px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    & a {
+      color: #fff;
+      font-size: 26px;
+      margin: 5% 0;
+
+        &:hover {
+          color: rgb(191, 235, 191);
+        }
+    }
+  }
+}
+
