@@ -38,3 +38,14 @@ background-color: #E7F0EC;
     }
   }
 }
+
+.container_skills {
+  display: flex;
+}
+
+.bar {
+  height: 21px;
+  width: 440px;
+  border-radius: 8px;
+  background: #000;
+}
