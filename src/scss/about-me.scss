@@ -9,3 +9,32 @@ background-color: #E7F0EC;
     font-size: 1.3rem;
   }
 }
+
+.container-infos {
+  margin: 0 8%;
+} 
+
+.student {
+  display: flex;
+  margin: 6% 0;
+  font-size: 1.12rem;
+  align-items: center;
+
+  img {
+    margin-right: 2vw;
+  }
+
+  &_container{
+    width: 65vw;
+  }
+
+  &_content {
+    display: flex;
+
+    h1 {
+      margin-right: 4px;
+      font-size: 1.2rem;
+      font-weight: bolder;  
+    }
+  }
+}
