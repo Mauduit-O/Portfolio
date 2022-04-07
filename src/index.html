@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/x-icon" href="assets/icon/favicon.ico" />
   <link rel="stylesheet" href="scss/_reset.scss">
+  <link rel="stylesheet" href="scss/header.scss">
   <link rel="stylesheet" href="scss/index.scss" >
   <link rel="stylesheet" href="assets/font/font.scss">
 
@@ -13,6 +14,7 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
   <script defer src="js/scrollmagic.js"></script>
+  <script defer src="js/menu.js"></script>
 
   <title>Web & Application Developer</title>
 </head>
@@ -20,18 +22,21 @@
 <body>
   <header>
     <div><img src="assets/logo/logo.svg" alt="Logo"></div>
-
-    <nav class="open-menu">
-      <div class="container-btn-menu">
-        <span class="content-btn-menu"></span>
-      </div>
-
-      <div class="menu">
+    <nav id="menu" class="menu">
+      <div class="container-menu">
         <a href="#">Accueil</a>
         <a href="">Mes projets</a>
         <a href="">About me</a>
       </div>
     </nav>
+
+    <div id="open-menu" class="open-menu">
+      <div class="toogle-btn">
+        <span></span>
+      </div>
+    </div>
+
+
   </header>
 
 
