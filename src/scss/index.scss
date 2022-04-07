@@ -117,7 +117,7 @@ header {
   background: #e6eae2;
   padding-left: 16%;
 
-  & .content-section2  {
+  & .content  {
     display: flex;
     justify-content: space-between;
 
@@ -130,11 +130,11 @@ header {
       padding-bottom: 6%;
 
       & h1 {
-        font-size: 8rem;
+        font-size: 6rem;
         margin-bottom: 8%;
       }  
 
-      & .line1 {
+      & .line1, .line3 {
         width: 10vw;
         height: 8px;
         background-color: white;
@@ -145,6 +145,11 @@ header {
         width: 4vw;
         height: 8px;
         background-color: black;
+
+      }
+
+      & .line3 {
+        background-color: #E7F0EC;
 
       }
 
@@ -184,14 +189,52 @@ header {
   }
 }
 
+.container-section3 {
+  background: white;
+  padding-left: 0;
 
+  & .content__section3 {
+    flex-direction: row-reverse;
+    justify-content: center;
 
-.container-section3  {
-  padding-top: 3%;
-  width: 100vw;
-  height: 100vh;
-  background: #b3d5de;
+    .container-article {
+      width: 45vw;
+
+      h1 {
+        font-size: 6rem;
+        margin-bottom: 2%;
+        text-transform: uppercase;
+      }
+
+      p {
+        margin: 6% 0 8%;
+      }
+    }
+
+    .container-img {
+     align-items: center;
+     margin-right: 4%;
+
+     img {
+      width: 40vw;
+      height: 55vh;
+    }
+    }
+  }
+
+  & button {
+    background-color: #E7F0EC;
+  }
+
 }
+
+
+// .container-section3  {
+//   padding-top: 3%;
+//   width: 100vw;
+//   height: 100vh;
+//   background: #b3d5de;
+// }
 
 
 .section2 {
