@@ -25,6 +25,7 @@ h1 {
 
   & .flower {
     height: 80vh;
+    width: 29vw;
   }
 
   & .portrait {
@@ -34,6 +35,11 @@ h1 {
       text-align: center;
       font-size: 72px;
       color: #858b82;
+    }
+
+    img {
+      width: 27vw;
+      height: 40vh;
     }
   }
 }
@@ -93,6 +99,7 @@ h1 {
         font-size: 1.5rem;
         font-family: 'Questrial';
         text-transform: uppercase;
+        background-color: white;
         border: solid 1Px;
         border-radius: 4px;
         transition: transform .6s;
@@ -151,7 +158,7 @@ h1 {
   }
 
   & button {
-    background-color: #E7F0EC;
+    background-color: white;
   }
 
 }
