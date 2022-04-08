@@ -5,8 +5,8 @@ background-color: #E7F0EC;
 
   &_text {
     text-align: center;
-    padding: 0 8%;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
+
   }
 }
 
@@ -16,7 +16,7 @@ background-color: #E7F0EC;
 
 .student {
   display: flex;
-  margin: 8% 0;
+  margin: 8% 0 10%;
   font-size: 1.12rem;
   align-items: center;
 
@@ -35,7 +35,7 @@ background-color: #E7F0EC;
       margin-bottom: 1%;
     }
 
-    h1 {
+    h2 {
       margin-right: 4px;
       font-size: 1.2rem;
       font-weight: bolder;  
@@ -44,12 +44,13 @@ background-color: #E7F0EC;
 }
 
 .skills {
+  margin-bottom: 10%;
 
   h1 {
-    font-size: 2rem;
     text-transform: uppercase;
-    margin-bottom: 3%;
+    margin-bottom: 6%;
     border-bottom: #E7F0EC;
+    font-size: 2rem;
   }
 
   .line1 {
@@ -94,4 +95,35 @@ background-color: #E7F0EC;
       background: linear-gradient(90deg, #DDEDF4  60%, #ffffff 40%);
     }
   }  
+}
+
+.services {
+  margin-bottom: 10%;
+
+  h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 8%;
+  }
+
+  .container-services {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .content-services {
+    width: 24vw;
+
+    &_title {
+      margin: 10% 0 8%;
+      text-transform: uppercase;
+      font-weight: bolder;
+    }
+
+    &_text {
+      font-size: 1.12rem;
+      color: #696969;
+    }
+  }
 }
