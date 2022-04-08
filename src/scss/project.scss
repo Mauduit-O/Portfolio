@@ -1,0 +1,48 @@
+.project {
+  margin-top: 8%;
+  text-align: center;
+
+  &_title {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 3%;
+  }
+}
+
+.container-project {
+  justify-content: center;
+  display: flex;
+
+  &_content {
+    background: #E7F0EC;
+    height: 72vh;
+    width: 85vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-img {
+    position: relative;
+  
+    &_img {
+      width: 35vw;
+      height: 55vh;
+    }
+  
+    .container-text {
+      position: absolute;
+      font-size: 1.7rem;
+      display: flex;
+      align-items: center;
+      margin-top: 4%;
+      padding: 2%;
+      text-align-last: left;
+      top: 50%;
+      left: 10%;
+      color: #95948F;
+    }
+  }
+  
+}
