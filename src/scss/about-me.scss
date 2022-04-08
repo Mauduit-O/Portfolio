@@ -97,12 +97,18 @@ background-color: #E7F0EC;
     text-transform: uppercase;
   }
 
+  .animation {
+    overflow: hidden;
+    max-width: 100vw;
+  }
+
   .container-services {
+    width: 168vw;
     display: flex;
     text-align: center;
     justify-content: space-between;
     margin-top: 6%;
-    animation: 3s linear 1s infinite running slidein;
+    animation: 10s linear 1s infinite slidein;
   }
 
   .content-services {
@@ -136,6 +142,8 @@ background-color: #E7F0EC;
 }
 
 @keyframes slidein {
-  0% { opacity: translate(-600px); }
-  to   { transform: translate(100%); }
+  from { transform: translateX(-18%) translateY(0px) translateZ(0px) }
+  50%   { transform: translateX(-10%) translateY(0px) translateZ(0px) }
+  from { transform: translateX(-18%) translateY(0px) translateZ(0px) }
 }
+
