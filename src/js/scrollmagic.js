@@ -2,27 +2,27 @@ var controller = new ScrollMagic.Controller();
 
 var scene = new ScrollMagic.Scene({
 
-  triggerElement: '.section1',
+  triggerElement: '.hero',
   reverse: false
 })
 
-.setClassToggle('.section1', 'fade-in')
+.setClassToggle('.hero', 'fade-in')
 .addTo(controller);
 
 
 var scene2 = new ScrollMagic.Scene({
 
-  triggerElement: '.section2',
+  triggerElement: '.project',
   reverse: false
 })
 
-.setClassToggle('.section2', 'fade-in')
+.setClassToggle('.project', 'fade-in')
 .addTo(controller);
 
 var scene3 = new ScrollMagic.Scene({
 
-  triggerElement: '.section3',
+  triggerElement: '.about-me',
   reverse: false
 })
-.setClassToggle('.section3', 'fade-in')
+.setClassToggle('.about-me', 'fade-in')
 .addTo(controller);
