@@ -1,121 +1,114 @@
-.container-section1  {
+.container-hero  {
   width: 100vw;
   height: 100vh;
   padding-top: 6%;
   background: #f7f7f2;
 }
 
-.content-section1 {
+.content-hero {
   display: flex;
   justify-content: center;
   padding-top: 4em;
 
-  & .flower {
+  &_flower {
     height: 80vh;
     width: 29vw;
   }
 
-  & .portrait {
+  &_portrait {
     margin-top: 15%;
-
-    & h1 {
-      text-align: center;
-      font-size: 72px;
-      color: #858b82;
-    }
 
     img {
       width: 27vw;
       height: 40vh;
     }
+
+    h1 {
+      text-align: center;
+      font-size: 72px;
+      color: #858b82;
+    }
   }
 }
 
-.container-section2  {
+.content  {
+  display: flex;
+  justify-content: space-between;
+}
+
+.line1, .line3 {
+  width: 10vw;
+  height: 8px;
+  background-color: white;
+}
+
+.line2 {
+  width: 4vw;
+  height: 8px;
+  background-color: black;
+}
+
+.container-section  {
   padding-top: 3%;
   width: 100vw;
   height: 98vh;
   background: #efede5;
   padding-left: 16%;
 
-  & .content  {
+  .container-article {
+    width: 24vw;
+    height: 90vh;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 6%;
 
-    & .container-article {
-      width: 24vw;
-      height: 90vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding-bottom: 6%;
+    h1 {
+      font-size: 6rem;
+      margin-bottom: 8%;
+    }  
 
-      & h1 {
-        font-size: 6rem;
-        margin-bottom: 8%;
-      }  
-
-      & .line1, .line3 {
-        width: 10vw;
-        height: 8px;
-        background-color: white;
-
-      }
-
-      & .line2 {
-        width: 4vw;
-        height: 8px;
-        background-color: black;
-
-      }
-
-      & .line3 {
-        background-color: #E7F0EC;
-
-      }
-
-      & p {
-        font-size: 2rem;
-        width: 46vw;
-        margin: 8% 0 14% 0;
-      }
-
-      & button {
-        width: 12rem;
-        height: 3.3rem;
-        font-size: 1.5rem;
-        font-family: 'Questrial';
-        text-transform: uppercase;
-        background-color: white;
-        border: solid 1Px;
-        border-radius: 4px;
-        transition: transform .6s;
-      }
-
-      & button:hover {
-        cursor: pointer;
-        transform: scale(1.05);
-      }
+    p {
+      font-size: 1.4rem;
+      width: 46vw;
+      margin: 8% 0 14% 0;
     }
 
-    .container-img {
-      display: flex;
-      align-items: flex-end;
-      height: 85vh;
+    button {
+      width: 12rem;
+      height: 3.3rem;
+      font-size: 1.5rem;
+      font-family: 'Questrial';
+      text-transform: uppercase;
+      background-color: white;
+      border: solid 1Px;
+      border-radius: 4px;
+      transition: transform .6s;
+    }
 
-      & img {
-        width: 56vw;
-        height: 55vh;
-      }
+    button:hover {
+      cursor: pointer;
+      transform: scale(1.05);
     }
   }
+
+  .container-img {
+    display: flex;
+    align-items: flex-end;
+    height: 85vh;
+    
+    &_img {
+      width: 56vw;
+      height: 55vh;
+    }
+  }  
 }
 
-.container-section3 {
+.about-me {
   background: #f7f7f2;
   padding-left: 0;
 
-  & .content__section3 {
+  &_container {
     flex-direction: row-reverse;
     justify-content: center;
 
@@ -137,49 +130,40 @@
      align-items: center;
      margin-right: 4%;
 
-     img {
-      width: 40vw;
-      height: 55vh;
-    }
+      &_about-me {
+        width: 40vw;
+        height: 55vh;
+      }
     }
   }
-
-  & button {
-    background-color: white;
-  }
-
 }
 
-
-.container-section4  {
+.container-contact  {
   background: #6b6767;
 
   h1, p {
     color: #f7f7f1;
   }
 
-  .btn-contact {
+  &_line {
     background-color: #f7f7f1;
-    border: none;
   }
 
-
+  .contact_btn {
+    border: none !important;
+  }
 }
 
-.line-contact {
-  background-color: #f7f7f1;
-}
 
-.section2 {
+// scrollmagic
+.project {
   opacity: 0;
   transition: all 0.6s linear;
 }
-
-.section3 {
+.about-me {
   opacity: 0;
   transition: all 0.6s linear;
 }
-
 .fade-in {
   opacity: 1;
 }
