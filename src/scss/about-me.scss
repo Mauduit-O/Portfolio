@@ -102,6 +102,7 @@ background-color: #E7F0EC;
     text-align: center;
     justify-content: space-between;
     margin-top: 6%;
+    animation: 3s linear 1s infinite running slidein;
   }
 
   .content-services {
@@ -132,4 +133,9 @@ background-color: #E7F0EC;
   background: #ddedf4;
   margin-top: 5px;
   margin-bottom: 6%;
+}
+
+@keyframes slidein {
+  0% { opacity: translate(-600px); }
+  to   { transform: translate(100%); }
 }
