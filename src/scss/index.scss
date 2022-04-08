@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   padding-top: 4em;
+  position: relative;
 
   &_flower {
     height: 80vh;
@@ -164,5 +165,3 @@
 .fade-in {
   opacity: 1;
 }
-
-
