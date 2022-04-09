@@ -2,7 +2,7 @@
 @import "src/scss/config/mixin.scss"; 
 
 .project {
-  margin-top: 8%;
+  margin-top: 7%;
   text-align: center;
 
   &_title {
@@ -26,6 +26,7 @@
 
   .container-img {
     position: relative;
+    cursor: pointer;
   
     &_img {
       width: 35vw;
@@ -35,15 +36,70 @@
     .container-text {
       position: absolute;
       font-size: 1.7rem;
-      display: flex;
-      align-items: center;
-      margin-top: 4%;
       padding: 2%;
-      text-align-last: left;
-      top: 50%;
-      left: 10%;
-      color: #95948F;
+
+      color:#3D3D3D;
+
+      &_iot {
+        align-items: center;
+        width: 28vw;
+        top: 38%;
+        left: 10%;
+
+        h1 {
+          font-size: 3rem;
+          margin-top: 6%;
+          color: #95948F;
+        }
+
+        p {
+          margin: 3% 0 3%;
+          font-size: 1.3rem;
+          font-weight: bolder;
+        }
+      }
     }
-  }
-  
+  }  
+}
+
+.container-text-cloud {
+  display: block;
+  width: 26vw;
+  top: 50%;
+  left: 14%;
+  color: #95948F;
+}
+
+.title-cloud {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 2%;
+}
+
+.container-test {
+  position: relative;
+  height: 80vh;
+}
+
+.icon-arrow {
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
+  cursor: pointer;
+}
+
+.icon-arrow-left {
+  left: 1vw;
+}
+
+.icon-arrow-right {
+  right: 1vw;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
 }
