@@ -13,3 +13,22 @@
   height: $h;
   background-color: $bg;
 }
+
+//Media Queries
+@mixin desktop-small {
+  @media (max-width: $desktop-small) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
