@@ -1,7 +1,11 @@
+@import "src/scss/config/variable.scss";
+@import "src/scss/config/mixin.scss"; 
+
 .infos-about-me {
 padding-top: 13vh;
 height: 22vh;
-background-color: #E7F0EC;
+background-color: $primaryColor;
+color: $textPrimaryColor;
 
   &_text {
     text-align: center;
@@ -17,7 +21,7 @@ background-color: #E7F0EC;
 .student {
   display: flex;
   margin: 8% 0 10%;
-  font-size: 1.12rem;
+  font-size: $text;
   align-items: center;
 
   img {
@@ -48,8 +52,8 @@ background-color: #E7F0EC;
 
   h1 {
     text-transform: uppercase;
-    border-bottom: #E7F0EC;
-    font-size: 2rem;
+    border-bottom: $primaryColor;
+    font-size: $title;
   }
 
   .container_skills {
@@ -64,7 +68,7 @@ background-color: #E7F0EC;
     margin-bottom: 3%;
 
     h2 {
-      font-size: 1.12rem;
+      font-size: $text;
       margin-bottom: 2%;
     }
 
@@ -93,7 +97,7 @@ background-color: #E7F0EC;
   margin-bottom: 10%;
 
   h1 {
-    font-size: 2rem;
+    font-size: $title;
     text-transform: uppercase;
   }
 
@@ -103,10 +107,9 @@ background-color: #E7F0EC;
   }
 
   .container-services {
+    @include flexbox($justify: space-between);
     width: 168vw;
-    display: flex;
     text-align: center;
-    justify-content: space-between;
     margin-top: 6%;
     animation: 10s linear 1s infinite slidein;
   }
@@ -121,7 +124,7 @@ background-color: #E7F0EC;
     }
 
     &_text {
-      font-size: 1.12rem;
+      font-size: $text;
       color: #696969;
     }
   }
@@ -130,13 +133,13 @@ background-color: #E7F0EC;
 .line1 {
   width: 100%;
   height: 3px;
-  background: #E7F0EC;
+  background: $longLinePrimary;
 }
 
 .line2 {
   width: 3%;
   height: 4px;
-  background: #ddedf4;
+  background: $LongLineSecondary;
   margin-top: 5px;
   margin-bottom: 6%;
 }

@@ -1,0 +1,15 @@
+@import "src/scss/config/variable.scss"; 
+
+//Flexbox
+@mixin flexbox($direction: row, $justify: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+}
+
+// Line decoration
+@mixin LineShort($w: 10vw, $h: 8px, $bg: $shortLinePrimary) {
+  width: $w;
+  height: $h;
+  background-color: $bg;
+}

@@ -1,3 +1,6 @@
+@import "src/scss/config/variable.scss"; 
+@import "src/scss/config/mixin.scss"; 
+
 header {
   background-color: white;
   height: 9vh;
@@ -67,19 +70,18 @@ header {
   }
 
   .container-menu {
+    @include flexbox($direction: column);
     width: 100vw;
     background-color: #3d3d3d;
     border-radius: 6px;
-    flex-direction: column;
     align-items: center;
-    display: flex;
     position: absolute;
     top: 0;
     right: 0;
     
     & a {
       color: #fff;
-      font-size: 26px;
+      font-size: $title;
       margin: 5% 0;
 
         &:hover {
