@@ -1,13 +1,15 @@
+@import "src/scss/config/variable.scss"; 
+@import "src/scss/config/mixin.scss"; 
+
 .container-hero  {
   width: 100vw;
   height: 100vh;
   padding-top: 6%;
-  background: #f7f7f2;
+  background: $bgSecondaryColor;
 }
 
 .content-hero {
-  display: flex;
-  justify-content: center;
+  @include flexbox;
   padding-top: 4em;
   position: relative;
 
@@ -44,44 +46,38 @@
 }
 
 .content  {
-  display: flex;
-  justify-content: space-between;
+  @include flexbox($justify: space-between);
 }
 
 .line1, .line3 {
-  width: 10vw;
-  height: 8px;
-  background-color: white;
+  @include LineShort();
 }
 
 .line2 {
-  width: 4vw;
-  height: 8px;
-  background-color: black;
+  @include LineShort($w: 4vw, $bg: $shortLineSecondary);
+
 }
 
 .container-section  {
   padding-top: 3%;
   width: 100vw;
   height: 98vh;
-  background: #efede5;
+  background: $bgTertiaryColor;
   padding-left: 16%;
 
   .container-article {
+    @include flexbox($direction: column);
     width: 24vw;
     height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding-bottom: 6%;
 
     h1 {
-      font-size: 6rem;
+      font-size: $titleIndex;
       margin-bottom: 8%;
     }  
 
     p {
-      font-size: 1.4rem;
+      font-size: $textIndex;
       width: 46vw;
       margin: 8% 0 14% 0;
     }
@@ -118,18 +114,17 @@
 }
 
 .about-me {
-  background: #f7f7f2;
+  background: $bgSecondaryColor;
   padding-left: 0;
 
   &_container {
-    flex-direction: row-reverse;
-    justify-content: center;
+    @include flexbox($direction: row-reverse);
 
     .container-article {
       width: 45vw;
 
       h1 {
-        font-size: 6rem;
+        font-size: $titleIndex;
         margin-bottom: 2%;
         text-transform: uppercase;
       }
@@ -162,7 +157,6 @@
     background-color: #f7f7f1;
   }
 }
-
 
 // scrollmagic
 .project {

@@ -1,25 +1,26 @@
+@import "src/scss/config/variable.scss"; 
+@import "src/scss/config/mixin.scss"; 
+
 .project {
   margin-top: 8%;
   text-align: center;
 
   &_title {
     text-align: center;
-    font-size: 2rem;
+    font-size: $title;
     text-transform: uppercase;
     margin-bottom: 3%;
   }
 }
 
 .container-project {
-  justify-content: center;
-  display: flex;
+  @include flexbox();
 
   &_content {
-    background: #E7F0EC;
+    @include flexbox();
+    background: $primaryColor;
     height: 72vh;
     width: 85vw;
-    display: flex;
-    justify-content: center;
     align-items: center;
   }
 
