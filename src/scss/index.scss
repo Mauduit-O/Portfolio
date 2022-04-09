@@ -146,7 +146,7 @@
   }
 }
 
-.container-contact  {
+.contact  {
   background: #6b6767;
 
   h1, p {
@@ -155,6 +155,10 @@
 
   &_line {
     background-color: #f7f7f1;
+  }
+
+  &_icons:first-child {
+    margin-right: 5%;
   }
 }
 
