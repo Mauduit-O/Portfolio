@@ -149,8 +149,13 @@
 .contact  {
   background: #6b6767;
 
-  h1, p {
+  h1, a {
     color: #f7f7f1;
+  }
+
+  a {
+    font-size: 1.9rem;
+    margin: 6% 0 12%;
   }
 
   &_line {
