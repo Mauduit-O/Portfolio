@@ -76,19 +76,18 @@ color: $textPrimaryColor;
       height: 21px;
       width: 440px;
       border-radius: 8px;
-      border: solid 1px #000;
     }
 
     &_bar1 {
-      background: linear-gradient(90deg, #E7F0EC  60%, #ffffff 40%);
+      background:#E7F0EC;
     }
     
     &_bar2 {
-      background: linear-gradient(90deg, #F0EFE7  60%, #ffffff 40%);
+      background:#F0EFE7;
     }
     
     &_bar3 {
-      background: linear-gradient(90deg, #DDEDF4  60%, #ffffff 40%);
+      background:#DDEDF4;
     }
   }  
 }
