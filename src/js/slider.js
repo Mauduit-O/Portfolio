@@ -1,4 +1,4 @@
-var slides  = document.querySelectorAll('.container-project > .container-project_content');
+var slides  = document.querySelectorAll('.container-project_content');
 var prev = document.querySelector('.icon-arrow_left');
 var next = document.querySelector('.icon-arrow_right')
 
@@ -23,5 +23,3 @@ next.onclick = function(){
 prev.onclick = function(){
   prevSlide();
 }
-
-
