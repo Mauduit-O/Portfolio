@@ -1,6 +1,6 @@
-var slides  = document.querySelectorAll('.container-test > .container-project_content');
-var prev = document.querySelector('.icon-arrow-left');
-var next = document.querySelector('.icon-arrow-right')
+var slides  = document.querySelectorAll('.container-project > .container-project_content');
+var prev = document.querySelector('.icon-arrow_left');
+var next = document.querySelector('.icon-arrow_right')
 
 var currentSlide = 0;
 

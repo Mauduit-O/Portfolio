@@ -15,6 +15,23 @@
 
 .container-project {
   @include flexbox();
+  position: relative;
+  height: 80vh;
+
+  .icon-arrow {
+    position: absolute;
+    z-index: 1;
+    bottom: 50%;
+    cursor: pointer;
+  
+    &_left {
+      left: 1vw;
+    }
+  
+    &_right {
+      right: 1vw;
+    }
+  }
 
   &_content {
     @include flexbox();
@@ -36,8 +53,6 @@
     .container-text {
       position: absolute;
       font-size: 1.7rem;
-      padding: 2%;
-
       color:#3D3D3D;
 
       &_iot {
@@ -45,6 +60,7 @@
         width: 28vw;
         top: 38%;
         left: 10%;
+        padding: 2%;
 
         h1 {
           font-size: 3rem;
@@ -58,44 +74,24 @@
           font-weight: bolder;
         }
       }
+
+      &_cloud {
+        display: block;
+        width: 26vw;
+        top: 50%;
+        left: 14%;
+        color: #95948F;
+
+        h1 {
+          font-size: 3rem;
+          font-weight: bolder;
+          margin-bottom: 2%;
+          color: #3D3D3D;
+        }
+      }
     }
   }  
 }
-
-.container-text-cloud {
-  display: block;
-  width: 26vw;
-  top: 50%;
-  left: 14%;
-  color: #95948F;
-}
-
-.title-cloud {
-  font-size: 3rem;
-  font-weight: bolder;
-  margin-bottom: 2%;
-}
-
-.container-test {
-  position: relative;
-  height: 80vh;
-}
-
-.icon-arrow {
-  position: absolute;
-  z-index: 1;
-  bottom: 50%;
-  cursor: pointer;
-}
-
-.icon-arrow-left {
-  left: 1vw;
-}
-
-.icon-arrow-right {
-  right: 1vw;
-}
-
 .hide {
   display: none;
 }
