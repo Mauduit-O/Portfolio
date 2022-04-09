@@ -10,7 +10,6 @@ color: $textPrimaryColor;
   &_text {
     text-align: center;
     font-size: 1.7rem;
-
   }
 }
 
@@ -52,7 +51,6 @@ color: $textPrimaryColor;
 
   h1 {
     text-transform: uppercase;
-    border-bottom: $primaryColor;
     font-size: $title;
   }
 
@@ -79,11 +77,11 @@ color: $textPrimaryColor;
     }
 
     &_bar1 {
-      background:#E7F0EC;
+      background: $secondaryColor;
     }
     
     &_bar2 {
-      background:#F0EFE7;
+      background:$primaryColor;
     }
     
     &_bar3 {
