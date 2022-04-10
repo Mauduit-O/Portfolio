@@ -16,16 +16,28 @@
   &_flower {
     height: 80vh;
     width: 29vw;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &_portrait {
     margin-top: 7%;
     margin-left: 6%;
 
-    &_portrait-img {
-      width: 27vw;
-      height: 40vh;
-      margin-left: 4%;
+    @include mobile {
+      @include flexbox($direction: column);
+      align-items: center;
+      margin: 0;
+      height: 80vh;
+    }
+
+    &_img {
+      @include mobile {
+        width: 66vw;
+        height: 40vh;
+      }
     }
 
     h1 {
@@ -34,6 +46,10 @@
       color: #5f635d;
       font-size: 4.5rem;
       font-family: 'Quicksand';
+
+      @include mobile {
+        font-size: 2.2rem;
+      }
     }
 
     p {
@@ -47,6 +63,10 @@
 
 .content  {
   @include flexbox($justify: space-between);
+
+  @include mobile {
+    @include flexbox($direction:column);
+  }
 }
 
 .line1, .line3 {
@@ -65,33 +85,59 @@
   background: $bgTertiaryColor;
   padding-left: 16%;
 
+  // @include mobile {  
+  //   height: auto;
+  // }
+
   .container-article {
     @include flexbox($direction: column);
     width: 24vw;
     height: 90vh;
     padding-bottom: 6%;
 
+    @include mobile {  
+      width: auto;
+      height: 47vh;
+    }
+
     h1 {
       font-size: $titleIndex;
       margin-bottom: 8%;
+
+      @include mobile {
+        font-size: $titleIndexMobile;
+        margin-bottom: 3%;
+      }
     }  
 
     p {
       font-size: $textIndex;
       width: 46vw;
-      margin: 8% 0 14% 0;
+      margin: 8% 0 14%;
+
+      @include mobile {
+        font-size: $textIndexMobile;
+        width: 63vw;
+        margin: 4% 0 10%;
+      }
     }
 
     button {
       width: 12rem;
       height: 3.3rem;
-      font-size: 1.1rem;
+      font-size: $textBtn;
       font-family: 'Questrial';
       text-transform: uppercase;
       background-color: white;
       border: none;
       border-radius: 4px;
       transition: transform .6s;
+
+      @include mobile {
+        font-size: $textBtnMobile;
+        width: 7rem;
+        height: 2.3rem;
+      }
     }
 
     button:hover {
@@ -105,10 +151,20 @@
     display: flex;
     align-items: flex-end;
     height: 85vh;
+
+    @include mobile {
+      height: 62vh;
+    }
     
     &_img {
       width: 56vw;
       height: 55vh;
+
+      @include mobile {
+        width: 100vw;
+        height: 37vh;
+        transform: translate(-16vw, -28vh);
+      }
     }
   }  
 }
@@ -120,13 +176,25 @@
   &_container {
     @include flexbox($direction: row-reverse);
 
+    @include mobile {
+      @include flexbox($direction: column);
+      padding-left: 16%;
+    }
+
     .container-article {
       width: 45vw;
 
+      @include mobile {
+        width: auto;
+      }
+
       h1 {
-        font-size: $titleIndex;
         margin-bottom: 2%;
         text-transform: uppercase;
+
+        @include mobile {
+          font-size: $titleIndexMobile;
+        }
       }
 
       p {
@@ -141,6 +209,13 @@
       &_about-me {
         width: 40vw;
         height: 55vh;
+
+        @include mobile {
+          width: 99vw;
+          height: 42vh;
+          transform: translate(-8vw, -9vh);
+        }
+        
       }
     }
   }
@@ -157,6 +232,11 @@
     color: #919191;
     font-size: 1.9rem;
     margin: 6% 0 12%;
+
+    @include mobile {
+      font-size: $textIndexMobile;
+      width: 63vw;
+    }
   }
 
   &_line {
@@ -169,6 +249,18 @@
 
   &_icons:first-child {
     margin-right: 5%;
+  }
+
+  .container-img {
+    @include mobile {
+      height: 48vh;
+
+      &_img {
+        @include mobile {
+          transform: translate(-16vw, -14vh);
+        }
+      }
+    }
   }
 }
 
@@ -184,3 +276,4 @@
 .fade-in {
   opacity: 1;
 }
+
