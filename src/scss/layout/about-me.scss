@@ -2,14 +2,31 @@
 @import "src/scss/config/mixin.scss"; 
 
 .infos-about-me {
-padding-top: 13vh;
-height: 22vh;
-background-color: $primaryColor;
-color: $textPrimaryColor;
+  padding-top: 13vh;
+  height: 22vh;
+  background-color: $primaryColor;
+  color: $textPrimaryColor;
 
-  &_text {
+  @include mobile {
+    padding-top: 14vh;
+  }
+
+  &_title {
     text-align: center;
     font-size: 1.7rem;
+    font-family: 'Quicksand';
+
+    @include desktop-small {
+    font-size: 1.5rem;
+    }
+
+    @include tablet {
+      font-size: 1.2rem;
+    }
+
+    @include mobile {
+      font-size: 0.8rem;
+    }
   }
 }
 
@@ -23,12 +40,38 @@ color: $textPrimaryColor;
   font-size: $text;
   align-items: center;
 
+  @include tablet {
+    flex-direction: column;
+    margin: 10% 0 18%;
+  }
+
+  @include mobile {
+    justify-content: center;
+    height: 71vh;
+    margin: 0;
+  }
+
   img {
     margin-right: 2vw;
+
+    @include mobile {
+      width: 39vw;
+    }
   }
 
   &_container{
     width: 65vw;
+
+    @include tablet {
+      @include flexbox($direction: column);
+      align-items: center;
+      width: 100vw;
+      margin-top: 8%;
+    }
+    
+    @include mobile {
+      margin-top: 17%;
+    }
   }
 
   &_content {
@@ -42,6 +85,16 @@ color: $textPrimaryColor;
       margin-right: 4px;
       font-size: 1.2rem;
       font-weight: bolder;  
+
+      @include mobile {
+        font-size: 0.8rem;
+      }
+    }
+
+    p {
+      @include mobile {
+        font-size: 0.8rem;
+      }
     }
   }
 }
@@ -49,16 +102,44 @@ color: $textPrimaryColor;
 .skills {
   margin-bottom: 10%;
 
+  @include mobile {
+    margin-bottom: 28%;
+  }
+
   h1 {
     text-transform: uppercase;
     font-size: $title;
+
+    @include desktop-small {
+      font-size: 1.8rem;
+    }
+
+    @include tablet {
+      font-size: 1.4rem;
+    }
+
+    @include mobile {
+      font-size: 1.1rem;
+    }
   }
 
   .container_skills {
     display: flex;
+
+    @include desktop-small {
+      justify-content: space-between;
+    }
+
+    @include mobile {
+      flex-direction: column;
+    }
    
     div {
       width: 40vw;
+
+      @include mobile {
+        width: 90vw;
+      }
     }
   }
 
@@ -68,12 +149,25 @@ color: $textPrimaryColor;
     h2 {
       font-size: $text;
       margin-bottom: 2%;
+
+      @include mobile {
+        font-size: 0.8rem;
+      }
     }
 
     .bar {
       height: 21px;
       width: 440px;
       border-radius: 8px;
+
+      @include desktop-small {
+        width: 40vw;
+      }
+
+      @include mobile {
+        width: 83vw;
+        height: 7px;
+      }
     }
 
     &_bar1 {
@@ -96,6 +190,14 @@ color: $textPrimaryColor;
   h1 {
     font-size: $title;
     text-transform: uppercase;
+
+    @include tablet {
+      font-size: 1.4rem;
+    }
+
+    @include mobile {
+      font-size: 1.1rem;
+    }
   }
 
   .animation {
@@ -109,20 +211,52 @@ color: $textPrimaryColor;
     text-align: center;
     margin-top: 6%;
     animation: 10s linear 1s infinite slidein;
+
+    @include mobile {
+      width: 265vw;
+    }
   }
 
   .content-services {
     width: 24vw;
 
+    @include mobile {
+      width: 100vw;
+    }
+
+    img {
+
+      @include desktop-small {
+        height: 11vh;
+      }
+
+      @include tablet{
+        height: 7vh;
+      }
+
+    }
+
     &_title {
       margin: 10% 0 8%;
       text-transform: uppercase;
       font-weight: bolder;
+
+      @include mobile {
+        font-size: 0.8rem;
+      }
     }
 
     &_text {
       font-size: $text;
       color: #696969;
+
+      @include desktop-small {
+        font-size: 0.8rem;
+      }
+
+      @include mobile {
+        font-size: 0.6rem;
+      }
     }
   }
 }
@@ -139,6 +273,10 @@ color: $textPrimaryColor;
   background: $LongLineSecondary;
   margin-top: 5px;
   margin-bottom: 6%;
+
+  @include tablet  {
+    margin-bottom: 6%;
+  }
 }
 
 @keyframes slidein {
