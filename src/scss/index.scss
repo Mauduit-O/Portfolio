@@ -15,7 +15,11 @@
 
   &_flower {
     height: 80vh;
-    width: 29vw;
+    width: 32vw;
+
+    @include desktop-small {
+      width: 30vw;
+    }
 
     @include tablet {
       display: none;
@@ -26,17 +30,25 @@
     margin-top: 7%;
     margin-left: 6%;
 
-    @include tablet {
+    @include desktop-small {
       @include flexbox($direction: column);
       align-items: center;
       margin: 0;
-      height: 80vh;
+    }
+
+    @include tablet {
+      @include flexbox($direction: column);
+      height: 83vh;
     }
 
     &_img {
+      @include desktop-small {
+        width: 32vw;
+      }
+
       @include tablet {
-        width: 54vw;
-        height: 46vh;
+        width: 46vw;
+        height: 36vh;
       }
 
       @include mobile {
@@ -51,6 +63,10 @@
       color: #5f635d;
       font-size: 4.5rem;
       font-family: 'Quicksand';
+
+      @include desktop-small {
+        font-size: 3rem;
+      }
 
       @include tablet {
         font-size: 2.2rem;
@@ -93,7 +109,7 @@
   .container-article {
     @include flexbox($direction: column);
     width: 24vw;
-    height: 90vh;
+    height: 87vh;
     padding-bottom: 6%;
 
     @include tablet {  
@@ -172,7 +188,7 @@
     height: 85vh;
 
     @include tablet {
-      height: 33vh;
+      height: 25vh;
     }
 
     @include mobile {
@@ -184,9 +200,9 @@
       height: 55vh;
 
       @include tablet {
-        width: 78vw;
-        height: 54vh;
-        transform: translate(6vw, 8vh);
+        width: 77vw;
+        height: 31vh;
+        transform: translate(6vw);
       }
 
       @include mobile {
@@ -298,9 +314,9 @@
 
       &_img {
         @include tablet {
-          transform: translate(-5vw, 9vh);
           width: 87vw;
-          height: 52vh;
+          height: 39vh;
+          transform: translate(-5vw, -2vh);
         }
       }
     }
