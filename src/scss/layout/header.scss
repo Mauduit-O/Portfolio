@@ -79,11 +79,19 @@ header {
     align-items: center;
     transform: translateX(100%);
     transition-duration: 1.8s;
+
+    @include mobile {
+      height: 8vh;
+    }
     
     & a {
       color: #fff;
       font-size: 1.5rem;
       margin: 1% 0;
+
+      @include mobile {
+        font-size: 1rem;
+      }
 
       &:hover {
           text-decoration: underline;
