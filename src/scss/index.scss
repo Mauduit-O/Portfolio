@@ -17,7 +17,7 @@
     height: 80vh;
     width: 29vw;
 
-    @include mobile {
+    @include tablet {
       display: none;
     }
   }
@@ -26,7 +26,7 @@
     margin-top: 7%;
     margin-left: 6%;
 
-    @include mobile {
+    @include tablet {
       @include flexbox($direction: column);
       align-items: center;
       margin: 0;
@@ -34,6 +34,11 @@
     }
 
     &_img {
+      @include tablet {
+        width: 54vw;
+        height: 46vh;
+      }
+
       @include mobile {
         width: 66vw;
         height: 40vh;
@@ -47,7 +52,7 @@
       font-size: 4.5rem;
       font-family: 'Quicksand';
 
-      @include mobile {
+      @include tablet {
         font-size: 2.2rem;
       }
     }
@@ -64,7 +69,7 @@
 .content  {
   @include flexbox($justify: space-between);
 
-  @include mobile {
+  @include tablet {
     @include flexbox($direction:column);
   }
 }
@@ -85,17 +90,13 @@
   background: $bgTertiaryColor;
   padding-left: 16%;
 
-  // @include mobile {  
-  //   height: auto;
-  // }
-
   .container-article {
     @include flexbox($direction: column);
     width: 24vw;
     height: 90vh;
     padding-bottom: 6%;
 
-    @include mobile {  
+    @include tablet {  
       width: auto;
       height: 47vh;
     }
@@ -104,9 +105,13 @@
       font-size: $titleIndex;
       margin-bottom: 8%;
 
+      @include tablet {
+        font-size: $titleIndexTablet;
+        margin-bottom: 3%;
+      }
+
       @include mobile {
         font-size: $titleIndexMobile;
-        margin-bottom: 3%;
       }
     }  
 
@@ -115,9 +120,17 @@
       width: 46vw;
       margin: 8% 0 14%;
 
+      @include tablet {
+        font-size: $textIndexTablet;
+        line-height: 2rem;
+        width: 64vw;
+        margin: 1.6rem 0 1rem;
+      }
+
       @include mobile {
         font-size: $textIndexMobile;
-        width: 63vw;
+        line-height: 1.6rem;
+        width: 77vw;
         margin: 4% 0 10%;
       }
     }
@@ -132,6 +145,12 @@
       border: none;
       border-radius: 4px;
       transition: transform .6s;
+
+      @include tablet {
+        font-size: $textIndexTablet;
+        width: 9rem;
+        height: 3rem;
+      }
 
       @include mobile {
         font-size: $textBtnMobile;
@@ -152,6 +171,10 @@
     align-items: flex-end;
     height: 85vh;
 
+    @include tablet {
+      height: 33vh;
+    }
+
     @include mobile {
       height: 62vh;
     }
@@ -159,6 +182,12 @@
     &_img {
       width: 56vw;
       height: 55vh;
+
+      @include tablet {
+        width: 78vw;
+        height: 54vh;
+        transform: translate(6vw, 8vh);
+      }
 
       @include mobile {
         width: 100vw;
@@ -176,7 +205,7 @@
   &_container {
     @include flexbox($direction: row-reverse);
 
-    @include mobile {
+    @include tablet {
       @include flexbox($direction: column);
       padding-left: 16%;
     }
@@ -184,21 +213,20 @@
     .container-article {
       width: 45vw;
 
-      @include mobile {
+      @include tablet {
         width: auto;
       }
 
       h1 {
-        margin-bottom: 2%;
         text-transform: uppercase;
+
+        @include tablet {
+          font-size: $titleIndexTablet;
+        }
 
         @include mobile {
           font-size: $titleIndexMobile;
         }
-      }
-
-      p {
-        margin: 6% 0 8%;
       }
     }
 
@@ -210,12 +238,16 @@
         width: 40vw;
         height: 55vh;
 
-        @include mobile {
-          width: 99vw;
+        @include tablet {
+          width: 98vw;
           height: 42vh;
-          transform: translate(-8vw, -9vh);
+          transform: translate(-8vw, 1vh);
         }
-        
+
+        @include mobile {
+          width: 91vw;
+          transform: translate(-8vw, -14vh);
+        }
       }
     }
   }
@@ -233,9 +265,14 @@
     font-size: 1.9rem;
     margin: 6% 0 12%;
 
+    @include tablet {
+      font-size: 1.4rem;
+      width: 63vw;
+      margin: 0.6rem 0 1.6rem;
+    }
+
     @include mobile {
       font-size: $textIndexMobile;
-      width: 63vw;
     }
   }
 
@@ -249,15 +286,34 @@
 
   &_icons:first-child {
     margin-right: 5%;
+
+    @include tablet  {
+      margin-right: 3%;
+    }
   }
 
   .container-img {
+    @include tablet {
+      height: 33vh;
+
+      &_img {
+        @include tablet {
+          transform: translate(-5vw, 9vh);
+          width: 87vw;
+          height: 52vh;
+        }
+      }
+    }
+
     @include mobile {
-      height: 48vh;
+      height: 47vh;
 
       &_img {
         @include mobile {
-          transform: translate(-16vw, -14vh);
+          width: 96vw;
+          height: 47vh;
+          transform: translate(-16vw, -7vh);
+
         }
       }
     }
