@@ -12,6 +12,10 @@ header {
   img {
     margin-top: 3%;
     margin-left: 3%;
+
+    @include mobile {
+      margin-top: 7%;
+    }
   }
 
   .toogle-btn {
